@@ -10,7 +10,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{style}[2023/03/20 SwissFEL and SLS proposal class]
-\LoadClass[12pt,a4paper]{article}
+\LoadClass[11pt,a4paper]{article}
 
 \RequirePackage{calc}
 \RequirePackage{indentfirst}
@@ -100,7 +100,7 @@
 
 \AtBeginDocument{%
   \pagestyle{empty}
-  \maketitle
+  % \maketitle
   \thispagestyle{empty} % no page number on first page
   \let\maketitle\relax
 }
