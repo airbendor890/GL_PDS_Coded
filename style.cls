@@ -10,7 +10,7 @@
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{style}[2023/03/20 SwissFEL and SLS proposal class]
-\LoadClass[11pt,a4paper]{article}
+\LoadClass[12pt,a4paper]{article}
 
 \RequirePackage{calc}
 \RequirePackage{indentfirst}
@@ -27,7 +27,7 @@
  \thispagestyle{empty}
  \begin{flushleft}%
   {
-   \fontsize{12}{12}\selectfont
+   \fontsize{11}{11}\selectfont
    \@title
    \par
   }
@@ -47,14 +47,14 @@
 
 \def\sectionLevel{1}
 \def\sectionIndent{0mm}
-\def\sectionSpaceBefore{12pt}
-\def\sectionSpaceAfter{1pt}
-\def\sectionStyle{\normalsize\bfseries}
+\def\sectionSpaceBefore{10pt}
+\def\sectionSpaceAfter{5pt}
+\def\sectionStyle{\large\bfseries}
 
 \renewcommand{\section}{%
   \@startsection{section}{\sectionLevel}{\sectionIndent}{\sectionSpaceBefore}%
                 {\sectionSpaceAfter}{\sectionStyle}}%
-\renewcommand{\thesection}{\Alph{section}} % set capital letters as section numbering
+% \renewcommand{\thesection}{\Alph{section}} % set capital letters as section numbering
 
 \def\sectionLevelsub{2}
 %\def\sectionIndentsub{6mm}
@@ -99,9 +99,9 @@
 
 
 \AtBeginDocument{%
-  \pagestyle{empty}
+  % \pagestyle{empty}
   % \maketitle
-  \thispagestyle{empty} % no page number on first page
+  % \thispagestyle{empty} % no page number on first page
   \let\maketitle\relax
 }
 
