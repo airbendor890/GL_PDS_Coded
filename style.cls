@@ -57,14 +57,14 @@
 % \renewcommand{\thesection}{\Alph{section}} % set capital letters as section numbering
 
 \def\sectionLevelsub{2}
-%\def\sectionIndentsub{6mm}
+\def\sectionIndentsub{0mm}
 \def\sectionSpaceBeforesub{12pt}
 \def\sectionSpaceAftersub{1pt}
-\def\sectionStylesub{\normalsize}
+\def\sectionStylesub{\bf\small}
 
 \renewcommand{\subsection}{%
   \@startsection{subsection}{\sectionLevelsub}{\sectionIndentsub}{\sectionSpaceBeforesub}%
-                {\sectionSpaceAftersub}{\sectionStylesub}}%
+   {\sectionSpaceAftersub}{\sectionStylesub}}%
 
 
 \renewcommand{\@makecaption}[2]{%
